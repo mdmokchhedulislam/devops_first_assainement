@@ -16,6 +16,4 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Read hello.txt file and Output hello.txt file
-        run: |
-          echo "hello.txt"
-          cat hello.txt
+        run: cat hello.txt
