@@ -1,0 +1,21 @@
+
+
+
+
+name: Read & Output hello.txt file content
+on:
+  push:
+    branches: [ main ]  
+
+jobs:
+  read-file:
+    runs-on: ubuntu-latest  
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Read hello.txt file and Output hello.txt file
+        run: |
+          echo "hello.txt 
+          cat hello.txt
